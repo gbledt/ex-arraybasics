@@ -6,7 +6,7 @@ exercise.change = function() {
 
     // change the first element 'Apple' to 'Mango'
     // -------------------------------	
-    // ---------- Your Code ----------
+    fruits[0] = 'Mango';
     // -------------------------------	
 
     return fruits;
@@ -21,7 +21,7 @@ exercise.length = function() {
     // get the length of the fruits array
     // assign length to "length" variable
     // -------------------------------	
-    // ---------- Your Code ----------
+    length = fruits.length;
     // -------------------------------	
 
     return length;
@@ -34,7 +34,7 @@ exercise.concatenate = function() {
     // contatenate list of words
     // assign contatenated text to "text" variable
     // -------------------------------	
-    // ---------- Your Code ----------
+    text = list.join();
     // -------------------------------	
 
     return text;
@@ -47,7 +47,7 @@ exercise.addToEnd = function() {
 
     // add "Mango" to the end of the fruits array
     // -------------------------------	
-    // ---------- Your Code ----------
+    fruits.push('Mango');
     // -------------------------------	
 
     return fruits;
@@ -59,7 +59,7 @@ exercise.addToBegin = function() {
 
     // add 'Mango' to the beginning of an array
     // -------------------------------	
-    // ---------- Your Code ----------
+    fruits.unshift('Mango');
     // -------------------------------	
 
     return fruits;
@@ -71,7 +71,7 @@ exercise.deleteLast = function() {
 
     // delete the last element of an array 'Mango'
     // -------------------------------	
-    // ---------- Your Code ----------
+    fruits.pop();
     // -------------------------------	
 
     return fruits;
@@ -83,7 +83,7 @@ exercise.deleteFirst = function() {
 
     // delete the first element of an array 'Banana'
     // -------------------------------	
-    // ---------- Your Code ----------
+    fruits.shift();
     // -------------------------------	
 
     return fruits;
@@ -95,7 +95,7 @@ exercise.insert = function() {
 
     // insert an element 'Pear' after the first element 'Banana' in an array
     // -------------------------------	
-    // ---------- Your Code ----------
+    fruits.splice(1,0,'Pear');
     // -------------------------------	
 
     return fruits;
@@ -109,7 +109,7 @@ exercise.concat = function() {
     var fruits;
     // concat two arrays fruit1 and fruit2 int array fruits
     // -------------------------------	
-    // ---------- Your Code ----------
+    fruits = fruit1.concat(fruit2);
     // -------------------------------	
 
     return fruits;
@@ -121,7 +121,7 @@ exercise.sortAlphabetically = function() {
 
     // sort an array alphabetically
     // -------------------------------	
-    // ---------- Your Code ----------
+    fruits.sort();
     // -------------------------------
 
     return fruits;
@@ -133,7 +133,8 @@ exercise.reverseSort = function() {
 
     // sort an array in a reversed alphabetical order
     // -------------------------------	
-    // ---------- Your Code ----------
+    fruits.sort();
+    fruits.reverse();
     // -------------------------------
 
     return fruits;
